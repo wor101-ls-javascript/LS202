@@ -89,7 +89,7 @@ td {
 }
 
 td, th {
-  padding: .25rem 0;
+  padding: .20rem 0;
 }
 
 /* aligns last td element in main body to the right */
@@ -97,7 +97,7 @@ main td:last-child {
   text-align: right;
 }
 
-/* selects the 2nd table of the main bodies header*/
+/* selects the header of the 2nd table of the main body */
 /* aligns text to the right */
 /* adds thick black border to top */
 main table:nth-child(2) th {
@@ -110,3 +110,8 @@ main table:nth-child(2) th {
   width: 22rem;
 }
 
+/* selects last table of the main body */
+main table:last-child {
+  border-top: .5rem solid black;
+  border-bottom: 1px solid black;
+}
