@@ -1,3 +1,8 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -15,7 +20,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 28px;
-  font-family: 'Helvetica Black', Helvetica, Arial;;
 	/* font: inherit; */
 	vertical-align: baseline;
 }
@@ -26,11 +30,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-  font-size: 28px;
-  border: 2px solid black;
-  width: 24rem;
-  margin: 5px
-
 }
 ol, ul {
 	list-style: none;
@@ -46,81 +45,68 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+/* END OF RESET */
+
+/* set the main header font */
+h1 {
+  font-family: "Franklin Gothic Heavy", Arial;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Set main padding and top border */
+header td{
+  border: none;
+  padding: 3px 0;
+}
+
+/* Set body font, border, padding */
+body {
+  font-family: "Helvetica Black", Helvetica, Arial;
+  font-size: 1rem;
+  max-width: 23rem;
+  padding: 15px;
+  margin: 8px;
+  border: 2px solid black;
+}
+
+main {
+  border-top: 1rem solid black;
+  padding: 5px 0;
+}
+
+table {
   width: 100%;
 }
 
-h1 {
-  font-size: 2rem;
-  font-family: 'Franklin Gothic Heavy', Arial;
-  font-weight: bold;
-  margin-top: 16px;
-  margin-bottom: 10px;
-} 
-
-/* Creat this border below header */
-header {
-  display: block;
-  margin: 12px 12px 0 12px;
-  padding-bottom:12px;
-  border-bottom: 1rem solid black;
-}
-
-/* Removes bottom border from 2nd header. Border done in table */
-header:nth-of-type(2n) {
-  border-bottom: none;
-}
-
-/* adds small table border in 2nd header */
-th, td {
-  border-collapse: collapse;
-  border-bottom: 1px solid black;
+th {
   text-align: left;
+}
+
+td {
+  border-top: 1px solid black;
+}
+
+td, th {
   padding: .25rem 0;
 }
 
-/* Adds 1/2 sized black border between 2nd header and body */
-header td {
-  border-bottom: .5rem solid black;
-}
-
-/* right aligns 'calories from fat text' */
-header td:last-child {
-  text-align: right;
-}
-
-/* set left and right margins for main portion of page */
-main {
-  margin: 0 12px 12px 12px;
-}
-
-/* set dividing borders for main sections table */
-main th, main td {
-  border-collapse: collapse;
-  border-bottom: 1px solid black;
-
-}
-
-/* set main header '% Daily Value' to align right */
-
-main thead th {
-  text-align: right;
-  padding-left: 50px;
-}
-
-
-
-/* main tr th:first-child {
-  text-align: left;
-  color: red;
-} */
-
-/* set the percent cell in main table to align right */
+/* aligns last td element in main body to the right */
 main td:last-child {
   text-align: right;
 }
 
-/* indent 2nd+ rows of table in main table */
-main td {
-  color: red;
-  margin-left: 50px;
+/* selects the 2nd table of the main bodies header*/
+/* aligns text to the right */
+/* adds thick black border to top */
+main table:nth-child(2) th {
+  text-align: right;
+  border-top: .5rem solid black;
 }
+
+.indented-table {
+  margin-left: 1rem;
+  width: 22rem;
+}
+
