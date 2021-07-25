@@ -101,9 +101,13 @@ main th, main td {
 }
 
 /* set main header '% Daily Value' to align right */
+
 main thead th {
   text-align: right;
+  padding-left: 50px;
 }
+
+
 
 /* main tr th:first-child {
   text-align: left;
@@ -117,8 +121,6 @@ main td:last-child {
 
 /* indent 2nd+ rows of table in main table */
 main td {
-  margin-left: 2em;
-  padding-left: 2em;
   color: red;
-  border
+  margin-left: 50px;
 }
