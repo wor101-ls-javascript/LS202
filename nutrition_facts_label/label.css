@@ -121,6 +121,8 @@ main table:last-child {
 /* Selecs p elements in footer */
 footer p {
   font-size: .9rem;
+  display: inline-block;
+  width: 100%;
 }
 
 /* selects last p element in the footer */
