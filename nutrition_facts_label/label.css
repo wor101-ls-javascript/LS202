@@ -111,7 +111,35 @@ main table:nth-child(2) th {
 }
 
 /* selects last table of the main body */
+/* adds thick border to top of the table */
+/* adds thin border to bottom of table */
 main table:last-child {
   border-top: .5rem solid black;
   border-bottom: 1px solid black;
 }
+
+/* Selecs p elements in footer */
+footer p {
+  font-size: .9rem;
+}
+
+/* selects last p element in the footer */
+/* indents element to align with first p element */
+footer p:last-child {
+  padding-left: .6rem;
+}
+
+footer th, footer td {
+  font-weight: normal;
+  font-size: .8rem;
+  border: none;
+}
+
+footer th {
+  border-bottom: 1px solid black;
+}
+
+footer tr td {
+  margin-left: 2rem;
+}
+
