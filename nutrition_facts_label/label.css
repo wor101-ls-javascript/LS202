@@ -122,13 +122,18 @@ main table:last-child {
 footer p {
   font-size: .9rem;
   display: inline-block;
-  width: 100%;
+}
+
+/* Selects first p element of the footer */
+footer p:nth-child(1) {
+  vertical-align: top;
+  width: .5rem;
 }
 
 /* selects last p element in the footer */
 /* indents element to align with first p element */
-footer p:last-child {
-  padding-left: .6rem;
+footer p:nth-child(2) {
+  width: 96%;
 }
 
 footer th, footer td {
