@@ -7,6 +7,7 @@ fieldset {
   padding: 0;
   margin: 0 auto;
   border: none;
+
 }
 
 dt {
@@ -38,3 +39,39 @@ ul {
   list-style: none;
   font-size: 14px;
 }
+
+.partial {
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.one_half {
+  width: 50%
+}
+
+.one_tenth {
+  width: 10%;
+}
+
+.four_tenths {
+  width: 40%
+}
+
+.left {
+  padding-right: 5px;
+}
+
+.right {
+  padding-left: 5px;
+}
+
+dl {
+  margin-bottom: 0;
+}
+
+dl + dl {
+  margin-top: 0;
+}
+
+
+
