@@ -24,10 +24,11 @@ h2 {
 }
 
 .outlined {
-  border: 2px dashed #555;
+  border: 2px dashed rgb(92, 89, 89);
   margin: 2rem;
   padding: 2rem;
   width: 65%;
+  overflow: hidden;
 }
 
 .margins {
@@ -38,4 +39,9 @@ h2 {
   background-color: green;
   color: white;
   padding:  2rem;
+}
+
+.floating {
+  float: left;
+  margin: 1rem;
 }
