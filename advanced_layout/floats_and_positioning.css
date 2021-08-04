@@ -1,0 +1,41 @@
+div {
+  font: normal 16px Helvetica, Arial, sans-serif;
+  width: 70%;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 2px solid grey;
+}
+p {
+  color: #545459;
+  margin: 2rem 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  color: red;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+.outlined {
+  border: 2px dashed #555;
+  margin: 2rem;
+  padding: 2rem;
+  width: 65%;
+}
+
+.margins {
+  margin: 30px;
+}
+
+.padding {
+  background-color: green;
+  color: white;
+  padding:  2rem;
+}
