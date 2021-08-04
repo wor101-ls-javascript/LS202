@@ -3,7 +3,7 @@
   <head>
     <title>Contact Form</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="contact_form.css" />
+    <link rel="stylesheet" href="ls_contact_form.css" />
   </head>
   <body>
     <form action="#" method="get">
@@ -134,10 +134,16 @@
           <li><label><input type="checkbox" name="ruby">Ruby</label></li>
           <li><label><input type="checkbox" name="rails">Rails</label></li>
         </ul>        
-          
-        <label for="comments">Comments</label>
-        <textarea name="comments" id="comments" rows="6" cols="80"></textarea>
-     
+        
+        <dl>
+          <dt>
+            <label for="comments">Comments</label>
+          </dt>
+          <dd>
+            <textarea name="comments" id="comments" rows="6" cols="80"></textarea>
+          </dd>
+        </dl>     
+        
         <input type="hidden" name="date" value="2021-08-03" />
         <input type="submit" value="Send" />
         <input type="reset" value="Reset" />
