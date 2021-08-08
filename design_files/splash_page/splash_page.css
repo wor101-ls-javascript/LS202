@@ -83,13 +83,15 @@ body {
 
 .footer {
   grid-area: footer;
+  box-sizing: border-box;
   background-color: rgb(230, 230, 255);
   width: 100%;
-  display: flex;
-  justify-content: center;
+  justify-self: end;
+  padding-left: 250px;
 }
 
 .footer div {
+  display: inline-block;
   padding: 32px 61px;
 }
 
