@@ -133,12 +133,10 @@ main {
 
 .speakers li:hover > .speaker_summary {
   display: block;
-  /* position: relative; */
   width: 280px;
   height: 378px;
   background-color: black;
   opacity: .9;
-  /* bottom: 343px; */
   position: absolute;
   top: 0;
   left: 0;
