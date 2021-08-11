@@ -2,6 +2,7 @@
 
 body {
   font-size: 13px;
+  font-weight: 100;
   font-family: "Open Sans", Arial, sans-serif;
   color: #444;
 }
@@ -9,6 +10,7 @@ body {
 a {
   text-decoration: none;
 }
+
 .navigation {
   box-sizing: border-box;
   position: fixed;
@@ -97,7 +99,7 @@ main {
   margin-bottom: 17px;
 }
 
-.section a {
+.green_button {
   box-sizing: border-box;
   color: white;
   font-weight: bold;
@@ -105,5 +107,53 @@ main {
   padding: 10px 30px;
 }
 
+.speakers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1080px;
+}
+
+.speakers li {
+  width: 280px;
+  height: 378px;
+  border: 2px solid #F5F5F5;
+  text-align: center;
+  margin: 6px;
+}
+
+.speakers h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #008000;
+  padding-top: 30px;
+  padding-bottom: 6px;
+}
+
+.speakers li:hover > .speaker_summary {
+  display: block;
+  position: relative;
+  width: 280px;
+  height: 378px;
+  background-color: black;
+  opacity: .9;
+  bottom: 343px;
+}
 
 
+
+.speaker_summary {
+  display: none;
+  font-size: 13px;
+  color: white;
+}
+
+.speaker_summary a, 
+.speaker_summary a:visited {
+  color: #008000;
+  font-weight: bold;
+}
+
+.speaker_summary a:hover {
+  text-decoration: underline;
+}
