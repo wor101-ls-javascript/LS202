@@ -1,0 +1,70 @@
+@import url("white-space-reset.css");
+
+body {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  grid-template-areas: 
+    "main_header"
+    "speakers"
+    "schedule"
+    "location"
+    "call_for_papers"
+    "sponsors"
+    "footer"
+    ;
+  font-size: 13px;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #444;
+}
+
+.navigation {
+  box-sizing: border-box;
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 54px;
+  width: 100%;
+  border-top: 10px solid #F5F5F5;
+  border-bottom: 2px solid #F5F5F5;
+  background: white;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #444;
+  padding: 0 28px;
+}
+
+header {
+  margin: 52px auto 0 auto;
+  background-image: url("images/front.jpg");
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  max-width: 1570px;
+  color: white;
+}
+
+header img {
+  display: block;
+  margin: 150px auto 4px auto;
+}
+
+header h1 {
+  font-size: 72px;
+  font-weight: normal;
+  text-align: center;
+}
+
+header h2 {
+  font-size: 31px;
+  font-weight: normal;
+  text-align: center;
+}
+
+
