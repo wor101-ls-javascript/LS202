@@ -177,7 +177,7 @@ section p {
 .schedule li {
   border-top: 1px solid #F5F5F5;
   border-bottom: 1px solid #F5F5F5;
-  width: 
+
 }
 
 .schedule h2 {
@@ -318,7 +318,7 @@ footer div p {
 
 footer div h2 {
   font-size: 31px;
-  font-weight: 600p; 
+  font-weight: 600; 
  
 }
 
@@ -379,7 +379,7 @@ footer div h2 {
   .schedule li {
     border-top: 1px solid #F5F5F5;
     border-bottom: 1px solid #F5F5F5;
-    width: 
+
   }
   
   .schedule h2 {
