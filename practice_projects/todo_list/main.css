@@ -104,6 +104,7 @@ nav .circle {
 main {
   margin: 76px 100px 76px 32px;
   width: 100%;
+  position: relative;
 }
 
 main h1 {
@@ -136,8 +137,21 @@ main li {
   border-top: 1px solid #e7e7e7;  
 }
 
+
+
+li label {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 38px auto 22px;
+  grid-template-rows: 50px;
+  grid-template-areas:
+    "check main trash";
+}
+
 main li:first-child {
   border-top: none;
+  display: inline-block;
+  width: 100%;
 }
 
 main a {
@@ -161,6 +175,91 @@ input[type="trash"] {
   color: #148fd5;
 }
 
+.modal {
+  position: absolute;
+  visibility: hidden;
+  top: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 578px;
+  height: 404px;
+  box-sizing: border-box;
+  padding: 24px 38px 0 28px;
+
+  background-color: white;
+  border: 2px solid red;
+
+  display: grid;
+  align-items: center;
+  justify-items: start;
+  grid-template-columns: 112px 398px;
+  grid-template-rows: 60px 60px 168px 60px;
+  grid-template-areas:
+    "label_title input_title"
+    "label_duedate input_duedate"
+    "label_description input_description"
+    ". buttons";
+
+  z-index: 10;
+}
+
+
+.modal label {
+  display: inline-block;
+  color: black;
+}
+
+input[type="text"],
+input[type="date"],
+.modal textarea {
+  width: 100%;
+  height: 36px;
+  border: 1px solid #b3b3b3; 
+}
+
+.top_aligned {
+  align-self: start;
+  padding-top: 10px;
+}
+
+.modal textarea {
+  height: 143px;
+}
+
+.modal_buttons {
+  grid-area: buttons;
+}
+
+.modal_buttons button {
+  height: 36px;
+  width: 184px;
+  border: none;
+  background-color: #148fd5;
+  border-radius: 5px;
+  color: white;
+  font: 16px Helvetica, Arial, sans-serif;
+}
+
+.modal_label input[type="checkbox"] {
+  display: none;
+}
+
+.modal_label input:checked + form {
+  visibility: visible;
+ 
+}
+
+.modal_label input:checked + form::before {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background: rgba(0, 0, 0, .4);
+  z-index: 0;
+}
 
 
 
