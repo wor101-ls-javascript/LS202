@@ -16,6 +16,32 @@ body {
   font: 16px Helvetica, Arial, sans-serif;
 }
 
+.nav-wrapper {
+  position: relative;
+}
+
+.nav-wrapper .toggler {
+  position: absolute;
+  top: 20px;
+  left: 365px;
+  width: 48px;
+  height: 46px;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;
+}
+
+.nav-wrapper > img {
+  position: absolute;
+  top: 20px;
+  left: 365px;
+  width: 48px;
+  height: 46px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
 nav {
   width: 335px;
   height: 100%;
@@ -188,7 +214,7 @@ input[type="trash"] {
   padding: 24px 38px 0 28px;
 
   background-color: white;
-  border: 2px solid red;
+  border: 1px solid #e7e7e7;  
 
   display: grid;
   align-items: center;
@@ -250,7 +276,7 @@ input[type="date"],
  
 }
 
-.modal_label input:checked + form::before {
+/* .modal_label input:checked + form::after {
   position: fixed;
   top: 0;
   right: 0;
@@ -259,6 +285,50 @@ input[type="date"],
   content: "";
   background: rgba(0, 0, 0, .4);
   z-index: 0;
+} */
+
+#show_nav,
+#hide_nav {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* Hide Navigation */
+  nav {
+    visibility: hidden;
+    width: 0;
+  }
+
+  /* Display Hamburger */
+  .nav-wrapper > img {
+    visibility: visible;
+  }
+
+  /* Move toggler and hamburger to compensate for no navigation */
+  .nav-wrapper .toggler,
+  .nav-wrapper > img  {
+    visibility: visible;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+  }
+
+  /* Display navigation */
+  .nav-wrapper .toggler:checked ~ nav {
+    visibility: visible;
+    width: 335px;
+  }
+
+  /* Move toggler and hamburger to compensate for visible navigation */
+  .nav-wrapper .toggler:checked,
+  .nav-wrapper .toggler:checked ~ img  {
+    visibility: visible;
+    position: absolute;
+    top: 20px;
+    left: 365px;
+  }
+
 }
 
 

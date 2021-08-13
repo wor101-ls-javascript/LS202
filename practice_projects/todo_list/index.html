@@ -7,91 +7,98 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <nav>
-      <div class="group_header">
-        <a id="all_link" href="#"><img src="images/all-todos.png" alt="All Todos"/></a>
-        <h2 id="all_header">All Todos</h2>
-        <div class="count">
-          <p id="all_count" class="circle">18</p>
-        </div>        
-      </div>
-      <ul>
-        <li class="selected">
-          <a class="list_link" href="#">
-            <p class="date">02/16</p>
-            <div class="count">
-              <p class="selected circle">8</p>
-            </div>
-          </a>          
-        </li>
-        <li class="">
-          <a class="list_link" href="#">
-            <p class="date">03/16</p>
-            <div class="count">
-              <p class="circle">2</p>
-            </div>
-          </a>          
-        </li>
-        <li class="">
-          <a class="list_link" href="#">
-            <p class="date">04/16</p>
-            <div class="count">
-              <p class="circle">1</p>
-            </div>
-          </a>          
-        </li>
-        <li class="">
-          <a class="list_link" href="#">
-            <p class="date">05/16</p>
-            <div class="count">
-              <p class="circle">1</p>
-            </div>
-          </a>          
-        </li>
-        <li class="">
-          <a class="list_link" href="#">
-            <p class="date">05/16</p>
-            <div class="count">
-              <p class="circle">6</p>
-            </div>
-          </a>          
-        </li>
-      </ul>
-      <div class="group_header">
-        <a href="#"><img src="images/done.png" alt="All Todos"/></a>
-        <h2>All Todos</h2>
-      </div>
-      <ul>
-        <li>
-          <a class="list_link" href="#">
-            <p class="date strike_through">02/15</p>
-          </a>          
-        </li>
-        <li>
-          <a class="list_link" href="#">
-            <p class="date strike_through">03/16</p>
+    <div class="nav-wrapper">      
+      <input type="checkbox" class="toggler" />
+      <img src="images/hamburger.png" />
+      <nav id="navigation">
+        <div class="group_header">
+          <a id="all_link" href="#"><img src="images/all-todos.png" alt="All Todos"/></a>
+          <h2 id="all_header">All Todos</h2>
+          <div class="count">
+            <p id="all_count" class="circle">18</p>
+          </div>        
+        </div>
+        <ul>
+          <li class="selected">
+            <a class="list_link" href="#">
+              <p class="date">02/16</p>
+              <div class="count">
+                <p class="selected circle">8</p>
+              </div>
+            </a>          
+          </li>
+          <li class="">
+            <a class="list_link" href="#">
+              <p class="date">03/16</p>
+              <div class="count">
+                <p class="circle">2</p>
+              </div>
+            </a>          
+          </li>
+          <li class="">
+            <a class="list_link" href="#">
+              <p class="date">04/16</p>
+              <div class="count">
+                <p class="circle">1</p>
+              </div>
+            </a>          
+          </li>
+          <li class="">
+            <a class="list_link" href="#">
+              <p class="date">05/16</p>
+              <div class="count">
+                <p class="circle">1</p>
+              </div>
+            </a>          
+          </li>
+          <li class="">
+            <a class="list_link" href="#">
+              <p class="date">05/16</p>
+              <div class="count">
+                <p class="circle">6</p>
+              </div>
+            </a>          
+          </li>
+        </ul>
+        <div class="group_header">
+          <a href="#"><img src="images/done.png" alt="All Todos"/></a>
+          <h2>All Todos</h2>
+        </div>
+        <ul>
+          <li>
+            <a class="list_link" href="#">
+              <p class="date strike_through">02/15</p>
+            </a>          
+          </li>
+          <li>
+            <a class="list_link" href="#">
+              <p class="date strike_through">03/16</p>
+  
+            </a>          
+          </li>
+          <li>
+            <a class="list_link" href="#">
+              <p class="date strike_through">04/16</p>
+            </a>          
+          </li>
+          <li>
+            <a class="list_link" href="#">
+              <p class="date strike_through">05/16</p>
+            </a>          
+          </li>
+          <li>
+            <a class="list_link" href="#">
+              <p class="date strike_through">06/16</p>
+            </a>          
+          </li>
+        </ul>
+  
+      </nav>
+    </div>
 
-          </a>          
-        </li>
-        <li>
-          <a class="list_link" href="#">
-            <p class="date strike_through">04/16</p>
-          </a>          
-        </li>
-        <li>
-          <a class="list_link" href="#">
-            <p class="date strike_through">05/16</p>
-          </a>          
-        </li>
-        <li>
-          <a class="list_link" href="#">
-            <p class="date strike_through">06/16</p>
-          </a>          
-        </li>
-      </ul>
-
-    </nav>
     <main>
+      <a id="show_nav" href="#navigation"><img src="images/hamburger.png" /></a>
+      <a id="hide_nav" href="#"><img src="images/hamburger.png" /></a>
       <section class="list_header">
         <h1>02/16</h1>
         <p class="circle selected">8</p>
