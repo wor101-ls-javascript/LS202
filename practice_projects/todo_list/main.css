@@ -133,41 +133,35 @@ main li {
   grid-template-areas:
     "check main trash";
 
-  border-top: 1px solid grey;  
+  border-top: 1px solid #e7e7e7;  
 }
 
 main li:first-child {
   border-top: none;
+}
+
+main a {
+  color: black;
+}
+
+main a.strike_through {
+  color: #d1d1d1;
+  text-decoration: line-through;
+}
+
+main a:hover {
+  color: #148fd5;
 }
 
 input[type="trash"] {
   justify-self: end;
 }
 
-/* 
-main li {
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
-  height: 50px;
-  border-top: 1px solid grey;
+.blue_text {
+  color: #148fd5;
 }
 
-main li:first-child {
-  border-top: none;
-}
 
-.first_column {
-  width: 38px;  
-}
 
-#plus {
-  display: block;
-  margin: 0 auto;
-}
-
-input[type="image"] {
-
-} */
 
 
