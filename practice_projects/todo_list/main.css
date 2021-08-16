@@ -234,6 +234,8 @@ input[type="trash"] {
 .modal label {
   display: inline-block;
   color: black;
+  cursor: pointer;
+  position: relative;
 }
 
 input[type="text"],
@@ -274,6 +276,19 @@ input[type="date"],
 .modal_label input:checked + form {
   visibility: visible;
  
+}
+
+
+.modal_label input:checked + form::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+
 }
 
 /* .modal_label input:checked + form::after {
